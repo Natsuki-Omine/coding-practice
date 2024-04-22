@@ -1,0 +1,192 @@
+body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+/* ヘッダー */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 960px;
+	margin: 10px auto;
+}
+
+.logo {
+	width: 150px;
+	margin: 0 auto;
+}
+
+#pc-nav a {
+	color: #000000;
+	font-size: 20px;
+	margin: 0 20px;
+	text-decoration: none;
+}
+#pc-nav a:link {
+	color: #000000;
+}
+#pc-nav a:visited {
+	color: #000000;
+}
+#pc-nav a:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+#pc-nav a:active {
+	color: #000000;
+}
+
+/* メインビジュアル */
+
+#mainvisual {
+	width: 100%;
+}
+
+h1 {
+	font-size: 40px;
+	margin: 40px auto;
+	padding: 50px 0;
+	text-align: center;
+	text-decoration: underline 3px solid #a5a5a5;
+	text-underline-offset: 15px;
+}
+h2  {
+	font-size: 22px;
+}
+
+/* フッター */
+footer p {
+	text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+	
+	/* About */
+	#about {
+		display: inline;
+		margin: 0 auto;
+	}
+
+	#aboutContent {
+		display: flex;
+		justify-content: center;
+		padding: 0 20px;
+	}
+
+	.aboutImg {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+	}
+
+	.about-content {
+		margin-left: 40px;
+		padding-left: 10px;
+		position: relative;
+		bottom: 10px;
+	}
+
+	/* Bicycle */
+	#bicycle {
+		max-width: 960px;
+		margin: 0 auto 200px auto;
+	}
+
+	ul {
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		padding: 0 10px;
+	}
+
+	.img-center {
+		align-items: center;
+		margin: 0 20px;
+	}
+
+	.bicycle-img {
+		width: 33%;
+	}
+	.bicycle-img > img {
+		width: 100%;
+		height: auto;
+	}
+	.bicycles > h2 {
+		text-align: center;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.bicycles > p {
+		text-align: center;
+		margin: 2px 0 10px 0;
+	}
+}
+
+
+/* レスポンシブデザイン(スマホ) */
+@media screen and (max-width: 600px) {
+	/* About */
+	#about {
+		display: block;
+		margin: 0 auto;
+	}
+
+	#aboutContent {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#aboutContent > img {
+		position: relative;
+		left: 25%;
+		right: 25%;
+		width: 50%;
+		height: 50%;
+		border-radius: 50%;
+		margin-bottom: 20px;
+	}
+
+	.about-content {
+		margin-left: 40px;
+		padding-left: 10px;
+		position: relative;
+		bottom: 10px;
+	}
+
+	/* Bicycle */
+	#bicycle {
+		max-width: 960px;
+		margin: 0 auto 200px auto;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0 20px;
+	}
+
+	.bicycle-img {
+		margin-bottom: 30px;
+	}
+	.bicycle-img > img {
+		width: 100%;
+		height: auto;
+	}
+
+	.bicycles {
+		width: 80%;
+		height: auto;
+		margin: 0 auto;
+	}
+	.bicycles > h2 {
+		text-align: center;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.bicycles > p {
+		text-align: center;
+		margin: 2px 0 10px 0;
+	}
+}
