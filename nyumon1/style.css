@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(234, 255, 248);
+}
+
+#container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ヘッター */
+header {
+    padding: 60px 0 0 0;
+    margin-bottom: 5px;
+}
+
+#index, #detail {
+    background-color: white;
+    margin: 70px 0;
+}
+
+/* INDEX */
+#index > div {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.heading-h3 {
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.index-lst {
+    line-height: 3;
+}
+
+/* DETAIL */
+#detail-desc {
+    max-width: 600px;
+    margin: 0 auto;
+}
