@@ -18,13 +18,13 @@
 
         <main>
             <!-- メインビジュアル -->
-            <div>
-                <img src="images/mainvisual.png" alt="テキストテキスト">
+            <div id="mainvisual">
+                <img src="images/mainvisual.jpg" alt="テキストテキスト">
             </div>
 
             <!-- INDEX -->
             <section id="index">
-                <div>
+                <div class="section-box">
                     <h3 class="heading-h3">INDEX</h3>
                     <ol class="index-lst">
                         <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
@@ -38,21 +38,26 @@
 
             <!-- DETAIL -->
             <section id="detail">
-                <div id="detail-desc">
+                <div class="section-box">
                     <h3 class="heading-h3">DETAIL</h3>
                     <div class="detail-flex">
-                        <img src="images/detail.png" alt="テキストテキスト">
+                        <img class="detail-img" src="images/detail.jpg" alt="テキストテキスト">
                         <div class="img-description">
                             <h3>タイトルタイトルタイトル</h3>
                             <hr>
-                            <ul #description-lst>
-                                <li>タイトルタイトルタイトル</li>
-                                <li>タイトルタイトルタイトル</li>
-                                <li>タイトルタイトルタイトル</li>
-                            </ul>
+                            <dl #description-lst>
+                                <dt>著者</dt>
+                                <dd>タイトルタイトルタイトル</dd>
+
+                                <dt>出版社</dt>
+                                <dd>タイトルタイトルタイトル</dd>
+
+                                <dt>発行年</dt>
+                                <dd>タイトルタイトルタイトル</dd>
+                            </dl>
                             <hr>
                             <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                            <a href="index.html">オンラインストアで見る</a>
+                            <a class="online-store" href="index.html">オンラインストアで見る</a>
                         </div>
                     </div>
                 </div>
@@ -60,7 +65,7 @@
         </main>
 
         <footer>
-
+            <p>&copy; 2020 PHOTO BOOK</p>
         </footer>
     </div>    
 </body>
