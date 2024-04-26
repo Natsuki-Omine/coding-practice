@@ -1,10 +1,18 @@
 body {
-    background-color: rgb(234, 255, 248);
+    background-color: rgb(240, 255, 249);
+}
+
+li, dl, p, a {
+    color: rgb(88, 88, 88);
 }
 
 #container {
     max-width: 1000px;
     margin: 0 auto;
+}
+
+#mainvisual > img {
+    max-width: 100%;
 }
 
 /* ヘッター */
@@ -13,28 +21,133 @@ header {
     margin-bottom: 5px;
 }
 
-#index, #detail {
+#index {
     background-color: white;
-    margin: 70px 0;
+    margin: 70px 0 35px 0;
+    padding: 10px 0;
 }
 
 /* INDEX */
-#index > div {
+.section-box {
     margin: 0 auto;
     max-width: 600px;
 }
 
 .heading-h3 {
+    color: rgb(36, 36, 36);
     font-weight: 600;
-    font-size: 19px;
+    font-size: 18px;
+    margin: 5px 0;
 }
 
 .index-lst {
     line-height: 3;
+    padding-left: 20px;
+    margin-top: 0;
 }
 
 /* DETAIL */
-#detail-desc {
+#detail {
+    margin-bottom: 100px;
+    padding: 10px 0;
+}
+
+.detail-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-img {
+    width: 280px;
+    height: 280px;
+    margin: 10px 0;
+}
+
+.img-description {
+    height: 300px;
+    margin-left: 50px;
+    align-items: center;
+}
+.img-description > h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.img-description p, a {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.online-store:visited {
+    color: rgb(88, 88, 88);
+}
+.online-store:hover {
+    color: rgb(139, 139, 139);
+}
+
+dl {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+dt{
+    width: 25%;
+}
+dd {
+    width: 75%;
+    margin-left: 0;
+}
+
+
+/* フッター */
+footer {
+    max-width: 1000px;
+}
+
+footer > p {
+    font-size: 10px;
     max-width: 600px;
     margin: 0 auto;
+}
+
+/* ========================
+スマホレスポンシブデザイン
+======================== */
+
+@media screen and (max-width: 767px) {
+    .section-box {
+        padding: 20px 35px;
+    }
+
+    /* INDEX */
+    .index-lst {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-top: 10px;
+    }
+    .index-lst > li {
+        margin-bottom: 15px;
+    }
+
+    /* DETAIL */
+    .detail-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .img-description {
+        margin-left: 0;
+    }
+
+    .detail-img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* フッター */
+    footer {
+        padding: 0 35px;
+    }
 }
