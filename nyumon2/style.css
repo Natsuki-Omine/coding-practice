@@ -167,6 +167,11 @@ PCレスポンシブデザイン
         width: 90%;
     }
 
+    /* ヘッダー */
+    .logo {
+        padding-left: 10px;
+    }
+
     /* INDEX */
     ol {
         margin: 0 auto;
