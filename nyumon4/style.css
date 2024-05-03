@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', 'Arial', 'Hiragino Sans', 'Meiryo', sans-serif;
+}
+
+.recipe {
+    display: flex;
+}
+
+figure {
+    margin: 0;
+    width: 70%;
+}
+
+img {
+    width: 90%;
+    height: 700px;
+}
+
+.detail {
+    padding: 0 50px 0 0;
+}
+
+h2 {
+    margin: 30px 0 10px 0;
+}
+
+ul {
+    padding-left: 0;
+}
+.zairyo{
+    list-style: none;
+    position: relative;
+    left: 5px;
+}
+.zairyo span{
+    position: absolute;
+    right: 10px;
+} 
+
+ul > hr {
+    margin: 5px 0;
+}
+
+/* 作り方 */
+ol > hr {
+    margin: 5px 0;
+}
+ol {
+    padding-left: 25px;
+}
+
+/* ボタン */
+.btn {
+    text-align: center;
+    margin: 70px 0 50px 0;
+}
+
+button {
+    background-color: white;
+    width: 200px;
+    height: 50px;
+    box-shadow: 3px 3px 1px black;
+    transition: all 0.2s;
+}
+button:hover {
+    box-shadow: none;
+    transform: translate(2px, 2px);
+}
+
+
+/* フッター */
+footer {
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: black;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.sns:hover {
+    color: rgb(70, 70, 70);
+}
+
+/* =======================
+スマホ用レスポンシブデザイン
+======================= */
+
+@media screen and (max-width: 833px) {
+    .recipe {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    figure {
+        width: 100%;
+        margin: 0;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .detail {
+        left: 0;
+        padding: 0 30px;
+    }
+
+    .method {
+        position: relative;
+    }
+}
