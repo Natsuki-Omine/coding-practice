@@ -4,7 +4,9 @@ body {
 
 
 .menu {
-    margin: 0 auto;
+    max-width: 960px;
+    margin: 0px auto;
+    padding: 50px 4%;
     display: flex;
     justify-content: space-between;
     align-items: center;   
@@ -31,7 +33,7 @@ nav > a {
     width: 100%;
 }
 
-.menu, section {
+section {
     max-width: 960px;
     margin: 0px auto;
     padding: 50px 4% 0 4%;
@@ -137,6 +139,7 @@ footer p {
     .menu {
         flex-direction: column;
         margin: 20px 0;
+        padding: 0 4%;
     }
 
     nav > a {
