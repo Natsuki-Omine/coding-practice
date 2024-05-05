@@ -13,11 +13,11 @@
 		<div class="menu">
 			<h2>My Work</h2>
 			<nav>
-				<a href="index.html#about">About</a>
-				<a href="index.html#works">Works</a>
-				<a href="index.html#news">News</a>
-				<a href="index.html#contact">Contact</a>
-				<a href="index.html"><img class="icon" src="img/icon-instagram.png" alt="インスタアイコン"></a>
+				<a href="#about">About</a>
+				<a href="#works">Works</a>
+				<a href="#news">News</a>
+				<a href="#contact">Contact</a>
+				<a href="#"><img class="icon" src="img/icon-instagram.png" alt="インスタアイコン"></a>
 			</nav>
 		</div>
 	</header>
@@ -31,29 +31,95 @@
 	
 
 		<!-- About -->
-		<section>
+		<section id="about">
 			<h3>About</h3>
 			<div>
-				<p>Xxxxx Ashley</p>
-				<p>2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan<br>
+				<p class="about-content">Xxxxx Ashley</p>
+				<p class="about-content">2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan<br>
 					tel: 000-00000-0000<br>
 					url: www.xxxxx.jp<br>
 					mail: xxx@xxxxx.jp
 				</p>
-				<p>
+				<p class="about-content">
 					プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
 				</p>
 			</div>
 		</section>
 
 		<!-- Works -->
-		<section></section>
+		<section id="works">
+			<h3>Works</h3>
+			<div>
+				<ul class="works-photo">
+					<li class="photo-lst"><img class="photos" src="img/works1.jpg" alt="コンテナ"></li>
+					<li class="photo-lst"><img class="photos" src="img/works2.jpg" alt=""></li>
+					<li class="photo-lst"><img class="photos" src="img/works3.jpg" alt=""></li>
+					<li class="photo-lst"><img class="photos" src="img/works4.jpg" alt=""></li>
+					<li class="photo-lst"><img class="photos" src="img/works5.jpg" alt=""></li>
+					<li class="photo-lst"><img class="photos" src="img/works6.jpg" alt=""></li>
+				</ul>
+			</div>
+		</section>
 
 		<!-- News -->
-		<section></section>
+		<section id="news">
+			<h3>News</h3>
+			<hr>
+			<dl>
+				<dt>2020.XX.XX</dt>
+				<dd>デザイン雑誌「X X X X X X Vol.11」に掲載して頂きました。</dd>
+				<hr>
+
+				<dt>2020.XX.XX</dt>
+				<dd>XX月XX日から写真集「X X X X X X X」の販売を開始します。</dd>
+				<hr>
+
+				<dt>2019.XX.XX</dt>
+				<dd>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキスト</dd>
+				<hr>
+
+				<dt>2019.XX.XX</dt>
+				<dd>デザイン雑誌「X X X X X X Vol.10」に掲載して頂きました。</dd>
+				<hr>
+
+				<dt>2019.XX.XX</dt>
+				<dd>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキスト</dd>
+				<hr>
+			</dl>
+		</section>
 
 		<!-- Contact -->
-		<section></section>
+		<section id="contact">
+			<h3>Contact</h3>
+			<form>
+				<div class="form">
+					<div class="contact-heading">
+						<label>NAME</label>
+					</div>
+					<input type="text">
+				</div>
+				<br>
+
+				<div class="form">
+					<div class="contact-heading">
+						<label>E-mail</label>
+					</div>
+					<input type="text">
+				</div>
+				<br>
+
+				<div class="form">
+					<div class="contact-heading">
+						<label>MESSAGE</label>
+					</div>
+					<textarea></textarea>
+				</div>
+			</form>
+
+			<div class="btn">
+				<button type="submit">送信</button>
+			</div>
+		</section>
 	</main>
 
 	<footer>

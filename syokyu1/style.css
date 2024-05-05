@@ -10,6 +10,10 @@ body {
     align-items: center;   
 }
 
+nav {
+    display: flex;
+}
+
 nav > a {
     color: black;
     height: 20px;
@@ -29,8 +33,88 @@ nav > a {
 
 .menu, section {
     max-width: 960px;
-    margin: 70px auto;
-    padding: 0 4%;
+    margin: 0px auto;
+    padding: 50px 4% 0 4%;
+}
+
+/* コンテンツ */
+h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.about-content {
+    margin-bottom: 30px;
+}
+
+/* Works */
+.works-photo {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.photo-lst {
+    width: 32%;
+    height: auto;
+}
+
+.photos {
+    width: 100%;
+    height: auto;
+}
+
+/* News */
+dt {
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 70px 5px 10px;
+}
+
+dd {
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 0;
+    padding-left: 10px;
+    margin-inline-start: 0;
+}
+
+/* Contact */
+.form {
+    display: flex;
+}
+
+.contact-heading {
+    margin-right: 70px;
+    width: 100px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.btn {
+    margin: 20px auto 100px auto;
+    text-align: center;
+}
+
+button {
+    font-size: 15px;
+    letter-spacing: 5px;
+    color: white;
+    background-color: rgb(45, 45, 45);
+    width: 200px;
+    height: 50px;
 }
 
 /* フッター */
@@ -43,4 +127,40 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* =======================
+スマホ用レスポンシブデザイン
+======================= */
+@media screen and (max-width: 767px) {
+    /* ヘッダー */
+    .menu {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    nav > a {
+        margin: 10px;
+    }
+
+    /* Works */
+    .works-photo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .photo-lst {
+        width: 100%;
+        height: auto;
+    }
+
+    /* News */
+    dt, dd {
+        display: block;
+    }
+
+    /* Contact */
+    .form {
+        display: block;
+    }
 }
