@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Syokyu 3 | TOTTALY</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- GoogleFonts -Raleway- -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!-- ヘッダー -->
+	<header>
+		<a href="#">
+			<img class="logo" src="img/logo.svg" alt="ロゴマーク">
+		</a>
+
+		<div class="header-menu">
+			<nav class="left-menu">
+				<a href="#">ALL</a>
+				<a href="#">NEW</a>
+				<a href="#">VINTAGE</a>
+				<a href="#">CATEGORY</a>
+				<a href="#">LOOKBOOK</a>
+				<a class="sp-none" href="#">BLOG</a>
+			</nav>
+			<nav class="right-menu sp-none">
+				<a href="#">LOGIN</a>
+				<a href="#">CONTACT</a>
+			</nav>
+		</div>
+	</header>
+
+	<hr class="sp-none">
+
+	<main>
+		<section>
+			<div class="purchase">
+				<figure>
+					<img src="img/item.jpg" alt="TOTALLY Shirt">
+				</figure>
+
+				<div class="detail">
+					<hr style="margin: 0;">
+					<p class="product-name">TOTTALY Short Sleeve Shirt</p>
+					<hr>
+					<p class="product-description">
+						テキストテキストテキストテキストテキストテキストテキスト
+						テキストテキストテキストテキストテキストテキストテキスト
+						テキストテキストテキストテキストテキストテキストテキスト
+						テキストテキストテキスト
+					</p>
+					<p class="price">¥ 9,999 +tax</p>
+
+					<!-- 数量選択表 -->
+					<table class="select-table">
+						<thead>
+							<tr>
+								<th class="line-l line-t">Color</th>
+								<th class="line-t">Size</th>
+								<th class="amount-select line-t line-r"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th class="line-l">White</th>
+								<th>S</th>
+								<th class="line-r">
+									<select name="amount" id="amountSelectS">
+										<!-- <option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option> -->
+									</select>
+								</th>
+							</tr>
+							<tr>
+								<th class="line-l">White</th>
+								<th>M</th>
+								<th class="line-r">
+									<select name="amount" id="amountSelectM">
+										<!-- <option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option> -->
+									</select>
+								</th>
+							</tr>
+							<tr>
+								<th class="line-u line-l">White</th>
+								<th class="line-u">L</th>
+								<th class="line-u line-r">
+									<select name="amount" id="amountSelectL">
+										<!-- <option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option> -->
+									</select>
+								</th>
+							</tr>
+						</tbody>
+					</table>
+					<!-- 数量選択表 -->
+
+					<a href="#">
+						<button id="btn">ADD TO CART</button>
+					</a>
+
+					<!-- サイズ表 -->
+					<table class="size-table">
+						<thead>
+							<tr>
+								<th>Size</th>
+								<th>Chest</th>
+								<th>West</th>
+								<th>Height</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>S</th>
+								<td>99～99</td>
+								<td>99～99</td>
+								<td>99～99</td>
+							</tr>
+							<tr>
+								<th>M</th>
+								<td>99～99</td>
+								<td>99～99</td>
+								<td>99～99</td>
+							</tr>
+							<tr>
+								<th>L</th>
+								<td>99～99</td>
+								<td>99～99</td>
+								<td>99～99</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; TOTALLY</p>
+	</footer>
+
+	<script src="select.js"></script>
+</body>
+
+</html>
