@@ -20,10 +20,10 @@
 				<!-- メインビジュアル -->
 				<picture class="mainvisual">
 					<source media="(max-width: 767px)" srcset="img/mainvisual-sp.jpg">
-					<img src="img/mainvisual-pc.jpg" alt="">
+					<img src="img/mainvisual-pc.jpg" alt="メインビジュアル">
 				</picture>
 				<!-- ロゴマーク -->
-				<img class="header-logo" src="img/logo.svg" alt="ロゴ">
+				<img class="header-logo" src="img/logo.svg" alt="ロゴマーク">
 				<!-- ヘッダーメニュー -->
 				<div class="header-nav">
 					<nav>
@@ -42,19 +42,19 @@
 	</header>
 
 	<main>
-		<section id="news">
+		<section id="news" class="news">
 			<div class="news-content">
 				<p class="en-p">News</p>
 				<p class="jp-title">お知らせ</p>
 
 				<dl>
-					<dd class="add-border-l">タイトルタイトルタイトルタイトル</dd>
-					<dt class="add-border-r">2021.01.01</dt>
+					<dd class="add-border-l sp-none">タイトルタイトルタイトルタイトル</dd>
+					<dt class="add-border-r sp-none">2021.01.01</dt>
 					
-					<dd>タイトルタイトルタイトルタイトル</dd>
-					<dt class="add-border-r">2021.01.01</dt>
+					<dd class="sp-none">タイトルタイトルタイトルタイトル</dd>
+					<dt class="add-border-r sp-none">2021.01.01</dt>
 					
-					<dd>タイトルタイトルタイトルタイトル</dd>
+					<dd class="sp-border-l">タイトルタイトルタイトルタイトル</dd>
 					<dt class="add-border-r">2021.01.01</dt>
 					
 					<dd>タイトルタイトルタイトルタイトル</dd>
@@ -66,12 +66,33 @@
 			</div>
 		</section>
 
-		<section id="create">
+		<section id="create" class="create">
 			<div class="create-content">
-				<p class="jp-title">新しい価値の想像<span class="en-span">Create New Values</span></p>
+				<p class="jp-title">
+					新しい価値の想像
+					<span class="en-span sp-none">Create New Values</span>
+				</p>
 				<div class="image-textbox">
-					<img src="img/products1.jpg" alt="">
-					<div class="clear-box">
+					<img src="img/products1.jpg" alt="新しい価値の想像">
+					<div class="clear-box1">
+						<p>
+							テキストテキスト<br>
+							テキストテキスト
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="sci-tech" class="sci-tech">
+			<div class="sci-tech-content">
+				<p class="jp-title">
+					科学と技術の調和
+					<span class="en-span sp-none">Science & Technology</span>
+				</p>
+				<div class="image-textbox">
+					<img src="img/products2.jpg" alt="科学と技術の調和">
+					<div class="clear-box2">
 						<p>
 							テキストテキスト<br>
 							テキストテキスト

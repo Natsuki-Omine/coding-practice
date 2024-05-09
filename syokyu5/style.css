@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: rgb(224, 207, 240);
+    background-color: rgb(230, 226, 215);
     font-family: "Noto Serif JP", serif;
     font-weight: 400;
     font-style: normal;
@@ -10,13 +10,17 @@ main {
 }
 section {
     max-width: 1024px;
-    margin: 150px auto;
+}
+
+a {
+    cursor: pointer;
 }
 
 /* ヘッダー */
 header {
     width: 100%;
     height: auto;
+    margin-bottom: 150px;
 }
 
 .header-menu {
@@ -96,6 +100,11 @@ section img {
 }
 
 /* News */
+.news {
+    margin: -150px auto 0 auto;
+    padding-top: 150px;
+}
+
 .en-p {
     font-size: 14px;
     margin-left: 0;
@@ -106,12 +115,15 @@ section img {
     letter-spacing: 5px;
 }
 
-.news-content, .create-content {
+.news-content,
+ .create-content {
     display: flex;
     flex-direction: row-reverse;
 }
 
-.news-content *, .create-content * {
+.news-content *, 
+.create-content *,
+.sci-tech-content * {
     writing-mode: vertical-lr;
     text-orientation: mixed;
     white-space: nowrap;
@@ -137,33 +149,67 @@ dl dt {
     padding-right: 30px;
 }
 
-/* 新しい価値の想像 */
+/* Create New Values */
+.create {
+    margin: 200px auto 200px auto;
+}
+
 .en-span {
     font-size: 14px;
     margin-top: 30px;
 }
 
 .image-textbox {
+    width: 60%;
+    height: fit-content;
     position: relative;
     top: 90px;
 }
 .image-textbox img {
-    width: auto;
-    height: 60%;
+    width: 100%;
+    height: auto;
 }
 
-.clear-box {
+.clear-box1 {
     width: 300px;
     height: 150px;
-    background-color: rgba(255 255 0/ 68%);
+    background-color: rgba(227, 227, 46, 0.7);
     position: absolute;
-    top: 40%;
-    left: -4%;
+    bottom: -4%;
+    left: -3%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.clear-box p {
+.clear-box1 p {
+    color: white;
+    font-weight: bold;
+    writing-mode: horizontal-tb;
+}
+
+/* Science & Technology */
+.sci-tech {
+    margin: 0 auto 600px auto;
+}
+
+.sci-tech-content {
+    display: flex;
+}
+
+.clear-box2 {
+    width: 300px;
+    height: 150px;
+    background-color: rgba(180, 53, 53, 0.7);
+    position: absolute;
+    bottom: -4%;
+    right: -3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clear-box2 p {
+    color: white;
+    font-weight: bold;
     writing-mode: horizontal-tb;
 }
 
@@ -225,4 +271,75 @@ iframe {
     bottom: 20px;
     right: 50%;
     transform: translate(50%, 50%);
+}
+
+/* =======================
+スマホ用レスポンシブデザイン
+======================= */
+@media screen and (max-width: 767px) {
+    .sp-none {
+        display: none;
+    }
+
+    /* ヘッダー */
+    .header-logo {
+        right: 5%;
+    }
+
+    /* メイン */
+    .jp-title {
+        font-size: 150%;
+        margin: 0 10px;
+    }
+
+    /* NEWS */
+    .news-content {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .en-p {
+        font-size: 16px;
+    }
+
+    dl {
+        margin-right: 0;
+    }
+    dl dt {
+        margin-right: 10px;
+    }
+    dl dd {
+        margin-left: 20px;
+    }
+
+    .add-border-r {
+        padding-right: 5%;
+    }
+    .sp-border-l {
+        border-left: 1px solid;
+        color: black;
+        padding-left: 9%;
+    }
+
+    /* Create New Values */
+    .create-content,
+    .sci-tech-content {
+        width: 100%;
+    }
+
+    .clear-box1,
+    .clear-box2 {
+        width: 60%;
+        height: 40%;
+    }
+
+    .image-textbox {
+        width: 80%;
+    }
+
+    /* フッター */
+    .footer-r {
+        margin-right: 10px;
+        justify-content: unset;
+    }
 }
