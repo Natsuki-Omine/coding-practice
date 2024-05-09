@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    background-color: rgb(224, 207, 240);
+    font-family: "Noto Serif JP", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+main {
+    margin-bottom: 500px;
+}
+section {
+    max-width: 1024px;
+    margin: 150px auto;
+}
+
+/* ヘッダー */
+header {
+    width: 100%;
+    height: auto;
+}
+
+.header-menu {
+    position: relative;
+}
+
+.mainvisual source, 
+.mainvisual img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.header-logo {
+    width: 40px;
+    height: auto;
+    position: absolute;
+    top: 7%;
+    right: 10%;
+}
+
+.header-nav {
+    position: absolute;
+    top: 7%;
+    right: 20%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+}
+nav a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    white-space: nowrap;
+    padding-left: 30px;
+}
+
+.online-btn {
+    width: 80px;
+    height: 250px;
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+.online-btn > div {
+    width: 75%;
+    height: 90%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.online-btn p {
+    color: white;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    white-space: nowrap;
+}
+
+/* メイン */
+section img {
+    width: 50%;
+    height: auto;
+}
+
+.jp-title {
+    font-size: 32px;
+}
+
+/* News */
+.en-p {
+    font-size: 14px;
+    margin-left: 0;
+}
+
+.news-content > .jp-title {
+    margin-right: 2px;
+    letter-spacing: 5px;
+}
+
+.news-content, .create-content {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.news-content *, .create-content * {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    white-space: nowrap;
+}
+
+dl {
+    position: relative;
+    top: 50px;
+}
+dl dd {
+    margin-left: 30px;
+    margin-top: 0;
+}
+dl dt {
+    margin-right: 20px;
+}
+.add-border-l {
+    border-left: 1px solid black;
+    padding-left: 35px;
+}
+.add-border-r {
+    border-right: 1px solid black;
+    padding-right: 30px;
+}
+
+/* 新しい価値の想像 */
+.en-span {
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.image-textbox {
+    position: relative;
+    top: 90px;
+}
+.image-textbox img {
+    width: auto;
+    height: 60%;
+}
+
+.clear-box {
+    width: 300px;
+    height: 150px;
+    background-color: rgba(255 255 0/ 68%);
+    position: absolute;
+    top: 40%;
+    left: -4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clear-box p {
+    writing-mode: horizontal-tb;
+}
+
+/* フッター */
+footer {
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    position: relative;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: -400px;
+}
+
+.footer-r {
+    width: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: absolute;
+    top: 90px;
+    right: 10px;
+}
+.footer-logo {
+    width: 40px;
+}
+.footer-nav a {
+    padding-left: 20px;
+}
+
+.footer-l {
+    position: absolute;
+    top: 90px;
+    left: 20px;
+}
+.footer-l a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.address, .online-contact {
+    color: white;
+
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    white-space: nowrap;
+}
+
+.copyright {
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
