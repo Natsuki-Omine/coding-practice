@@ -294,7 +294,7 @@ footer * {
 	}
 
 	.nav a {
-		margin-right: 20px;
+		margin-right: 18px;
 	}
 
 	.contact {
@@ -389,6 +389,7 @@ footer * {
 		margin-bottom: 5px;
 	}
 	dl dd {
+		width: auto;
 		margin-left: 10px;
 		margin-bottom: 15px;
 	}
