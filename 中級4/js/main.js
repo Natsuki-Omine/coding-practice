@@ -1,49 +1,62 @@
-$(function(){
-    // ハンバーガ―メニュー
+document.addEventListener('DOMContentLoaded', function() {
+    // ハンバーガーメニュー
     
     // ハンバーガーメニューをクリックした時
-    $('.header-hamburger').on('click', function() {
+    document.querySelector('.header-hamburger').addEventListener('click', function() {
         hamburger();
     });
+    
     // メニューのリンクをクリックした時
-    $('.header-navi a').on('click', function() {
-        hamburger();
+    document.querySelectorAll('.header-navi a').forEach(function(element) {
+        element.addEventListener('click', function() {
+            hamburger();
+        });
     });
 
-    
-    // Inview（画面に表示されたタイミングで処理を実行）
-    
-    // BBBが選ばれる理由（スライド左）
-    $('.inview-slide-left').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
-        if(isInView){
-        $(this).stop().addClass('slide-left');
-        }
-    });
-    // BBBが選ばれる理由（スライド右）
-    $('.inview-slide-right').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
-        if(isInView){
-        $(this).stop().addClass('slide-right');
-        }
-    });
-    // 受講生の声（ふきだし）
-    $('.inview-balloon').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
-        if(isInView){
-        $(this).stop().addClass('balloon');
-        }
+    // IntersectionObserverのコールバック関数を定義
+    var observerCallback = function(entries, observer) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                if (entry.target.classList.contains('inview-slide-left')) {
+                    entry.target.classList.add('slide-left');
+                } else if (entry.target.classList.contains('inview-slide-right')) {
+                    entry.target.classList.add('slide-right');
+                } else if (entry.target.classList.contains('inview-balloon')) {
+                    entry.target.classList.add('balloon');
+                }
+            }
+        });
+    };
+
+    // IntersectionObserverのオプションを設定
+    var observerOptions = {
+        root: null, // ビューポートを基準
+        rootMargin: '0px',
+        threshold: 0 // 一部でも見えたらコールバックを呼び出す
+    };
+
+    // IntersectionObserverのインスタンスを作成
+    var observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    // 監視対象要素を設定
+    var inviewElements = document.querySelectorAll('.inview-slide-left, .inview-slide-right, .inview-balloon');
+    inviewElements.forEach(function(element) {
+        observer.observe(element);
     });
 });
 
-/*=================================================
-ハンバーガ―メニュー共通処理
-===================================================*/
+// ハンバーガ―メニュー共通処理
 function hamburger() {
-    $('.header-hamburger').toggleClass('active');
+    var hamburger = document.querySelector('.header-hamburger');
+    var navi = document.querySelector('.header-navi');
+    
+    hamburger.classList.toggle('active');
 
-    if ($('.header-hamburger').hasClass('active')) {
+    if (hamburger.classList.contains('active')) {
         // hamburgerクラスにactiveクラスが存在する場合は、naviにもactiveクラスを追加する
-        $('.header-navi').addClass('active');
+        navi.classList.add('active');
     } else {
         // hamburgerクラスにactiveクラスが存在しない場合は、naviからactiveクラスを削除する
-        $('.header-navi').removeClass('active');
+        navi.classList.remove('active');
     }
 }

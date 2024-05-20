@@ -56,7 +56,7 @@ li {
 
 // ヘッダー
 .header-menu {
-	width: 100%;
+	width: 90%;
   height: 100px;
   padding: 20px 0 0 50px;
 	display: flex;
@@ -126,7 +126,7 @@ li {
 
 .header-navi {
   width: 100%;
-  height: 100vh;
+  height: 200vh;
   background-color: $mainColor;
   color: #fff;
   position: fixed;
@@ -152,7 +152,7 @@ li {
 }
 
 .header-nav-menu {
-  margin: 80px 0 40px 0;
+  margin: 150px 0 40px 0;
 
 	& li {
 		margin-bottom: 20px;
@@ -320,7 +320,7 @@ li {
   background-color: #fff;
   padding: 5%;
 	// 最初は非表示
-  // opacity: 0;
+  opacity: 0;
 
 	& img {
 		width: auto;
@@ -370,11 +370,11 @@ li {
 }
 @keyframes slide-right {
   0% {
-    transform: translateX(150%);
+    transform: translateX(100%);
   }
   100% {
     opacity: 1;
-    transform: translateX(100%);
+    transform: translateX(66.7%);
   }
 }
 
@@ -641,7 +641,7 @@ SP
     width: 75px;
     height: 75px;
 
-    &.active span {
+    &.active .header-nav-bar {
       &:nth-child(1) {
         top: 37px;
         left: 21px;
@@ -671,10 +671,6 @@ SP
     top: 25px;
     left: 25px;
   }
-  .header-nav-menu {
-    margin-top: 110px;
-  }
-
   
   // Mainvisual
   .main-visual {
@@ -700,9 +696,9 @@ SP
     font-size: 1.75rem;
     margin-bottom: 10px;
   }
-  .main-visual-btn {
-    width: 90%;
-  }
+  // .main-visual-btn {
+  //   width: 90%;
+  // }
 
   /*-------------------------------------------
   Reason
@@ -716,7 +712,7 @@ SP
   }
 
   .main-reason-slide {
-    width: 90%;
+    width: 80%;
   }
 
   .main-reason-title {
@@ -738,7 +734,7 @@ SP
     }
     100% {
       opacity: 1;
-      transform: translateX(16px);
+      transform: translateX(11%);
     }
   }
 
@@ -773,7 +769,7 @@ SP
         top: 100%;
         border: 15px solid transparent;
         border-top: 15px solid #e9f1fb;
-        margin-left: calc(50% - 25px);
+        margin-left: calc(50% - 15px);
       }
     }
   }
@@ -788,13 +784,13 @@ SP
         top: 100%;
         border: 15px solid transparent;
         border-top: 15px solid #e9f1fb;
-        margin-right: calc(50% - 28px);
+        margin-right: calc(50% - 15px);
       }
     }
   }
 
   .main-voice-balloon-text {
-    width: 100%;
+    width: 90%;
     margin: 0 0 30px 0;
   }
 
@@ -803,12 +799,14 @@ SP
   -------------------------------------------*/
   .main-summary {
     margin-bottom: 80px;
+    padding-left: 14px;
+    padding-right: 14px;
   }
   .main-summary-menu {
     flex-direction: column;
 
     & li {
-      width: 90%;
+      width: 80%;
       height: 100%;
       padding: 30px;
       margin: 10px auto;
@@ -832,7 +830,10 @@ SP
   Entry
   -------------------------------------------*/
   .main-entry {
+    width: 90%;
+    height: 100%;
     margin-bottom: 80px;
+    padding: 0 14px;
   }
   .main-entry-title {
     font-size: 1.5rem;
@@ -851,20 +852,29 @@ SP
     flex-wrap: wrap;
   }
 
-  .footer a {
-    font-size: 0.75rem;
+  .footer {
+    padding-right: 14px;
+    padding-left: 14px;
+
+    & a {
+      font-size: 0.75rem;
+    }
   }
 
   .footer-title {
     font-size: 0.9375rem;
   }
 
-  .footer-inner > li {
-    width: 50%;
+  .footer-inner {
+    flex-wrap: wrap;
 
-    &:nth-child(1),
-    &:nth-child(2) {
-      margin-bottom: 30px;
+    & > li {
+      width: 45%;
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-bottom: 30px;
+      }
     }
   }
 }
