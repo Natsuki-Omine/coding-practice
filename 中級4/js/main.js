@@ -18,10 +18,13 @@ document.addEventListener('DOMContentLoaded', function() {
         entries.forEach(function(entry) {
             if (entry.isIntersecting) {
                 if (entry.target.classList.contains('inview-slide-left')) {
+                    // console.log('要素が表示領域に入った');
                     entry.target.classList.add('slide-left');
                 } else if (entry.target.classList.contains('inview-slide-right')) {
+                    // console.log('要素が表示領域に入った');
                     entry.target.classList.add('slide-right');
                 } else if (entry.target.classList.contains('inview-balloon')) {
+                    // console.log('要素が表示領域に入った');
                     entry.target.classList.add('balloon');
                 }
             }
