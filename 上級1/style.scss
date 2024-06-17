@@ -1,0 +1,23 @@
+.header-menu {
+    display: flex;
+    position: relative;
+}
+
+.header-nav-bar {
+    width: 32px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 25px;
+    transition: 0.3s ease-in-out;
+
+    &:nth-child(1) {
+        top: 30px;
+    }
+    &:nth-child(2) {
+        top: 40px;
+    }
+    &:nth-child(3) {
+        top: 50px;
+    }
+}
