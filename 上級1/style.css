@@ -319,12 +319,12 @@ textarea {
     height: 100%;
   }
   .header-navi ul.header-nav-menu {
-    margin: 50px 0;
+    margin: 20px 0;
     width: 80%;
   }
   .header-navi ul.header-nav-menu li {
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
   }
   .header-navi ul.header-nav-sns {
     position: fixed;
