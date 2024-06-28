@@ -1,140 +1,226 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>上級4 | Sneakers</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>上級4 | Sneakers</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-   <!-- slickの読み込み -->
-   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+	<!-- slickの読み込み -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 </head>
 <body>
-    <header>
-        <div class="header-menu">
-            <a href="#"><img src="img/logo.svg" alt="ロゴマーク" class="logo"></a>
+	<header class="header">
+			<div id="header-menu" class="header-menu">
+					<a href="#"><img src="img/logo.svg" alt="ロゴマーク" class="logo"></a>
 
-            <div class="header-hamburger" id="header-hamburger">
-                <span class="header-nav-bar"></span>
-                <span class="header-nav-bar"></span>
-                <span class="header-nav-bar"></span>
-            </div>
-        </div>
-    </header>
+					<nav id="header-navi" class="header-navi">
+						<ul class="header-nav-menu">
+							<li><a href="#pickup">PICK UP</a></li>
+							<li><a href="#feature">FEATURE</a></li>
+							<li><a href="#contact">CONTACT</a></li>
+						</ul>
+						<ul class="header-nav-sns">
+							<li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+							<li><a href="https://www.facebook.com/" target="_blank">facebook</a></li>
+							<li><a href="https://www.instagram.com/" target="_blank">instagram</a></li>
+						</ul>
+					</nav>
 
-    <main>
-        <section id="movie">
-            <video class="movie" controls autoplay loop muted>
-                <source src="movie/sneakers.mp4" type="video/mp4">
-            </video>
-        </section>
+					<div class="header-hamburger" id="header-hamburger">
+							<span class="header-nav-bar"></span>
+							<span class="header-nav-bar"></span>
+							<span class="header-nav-bar"></span>
+					</div>
 
-        <!-- PICK UP -->
-        <section id="pickUp">
-            <h2>PICK UP</h2>
-            <div class="pickup_pic">
-                <div>
-                    <img src="img/pickup1.jpg" alt="">
-                </div>
-                <div>
-                    <img src="img/pickup2.jpg" alt="">
-                </div>
-                <div>
-                    <img src="img/pickup3.jpg" alt="">
-                </div>
-                <div>
-                    <img src="img/pickup4.jpg" alt="">
-                </div>
-                <div>
-                    <img src="img/pickup5.jpg" alt="">
-                </div>
-                <div>
-                    <img src="img/pickup6.jpg" alt="">
-                </div>
-                <div>
-                    <img src="img/pickup7.jpg" alt="">
-                </div>
-                <div>
-                    <img src="img/pickup8.jpg" alt="">
-                </div>
-                <div>
-                    <img src="img/pickup9.jpg" alt="">
-                </div>
-            </div>
-        </section>
+					<div id="mask"></div>
+			</div>
+	</header>
 
-        <!-- FEATURE -->
-         <section id="feature" class="feature">
-            <h2>FEATURE</h2>
-            <div class="feature-pic">
-                <img src="img/feature1.jpg" alt="">
-                <img src="img/feature2.jpg" alt="">
-                <img src="img/feature3.jpg" alt="">
-            </div>
-            <div class="feature-pic">
-                <img src="img/feature4.jpg" alt="">
-                <img src="img/feature5.jpg" alt="">
-                <img src="img/feature6.jpg" alt="">
-            </div>
-            <div class="feature-pic">
-                <img src="img/feature7.jpg" alt="">
-                <img src="img/feature8.jpg" alt="">
-                <img src="img/feature9.jpg" alt="">
-            </div>
-         </section>
-    </main>
+	<main>
+		<section id="movie" class="movie">
+			<video class="video" controls autoplay loop muted>
+				<source src="movie/sneakers.mp4" type="video/mp4">
+			</video>
+		</section>
 
-    <footer>
-        <h2>CONTACT</h2>
-        <div class="footer-contents">
-            <div class="footer-contents-text">
-                <p>テキストテキストテキスト</p>
-                <p>
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                </p>
-                <p>
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                </p>
-            </div>
-            <div class="footer-contents-form">
-                <form>
-                    <label>Name:</label>
-                    <br />
-                    <input type="text">
+		<!-- PICK UP -->
+		<section id="pickup" class="pickup">
+			<h2>PICK UP</h2>
+			<div class="pickup_pic">
+				<div>
+					<img src="img/pickup1.jpg" alt="">
+				</div>
+				<div>
+					<img src="img/pickup2.jpg" alt="">
+				</div>
+				<div>
+					<img src="img/pickup3.jpg" alt="">
+				</div>
+				<div>
+					<img src="img/pickup4.jpg" alt="">
+				</div>
+				<div>
+					<img src="img/pickup5.jpg" alt="">
+				</div>
+				<div>
+					<img src="img/pickup6.jpg" alt="">
+				</div>
+				<div>
+					<img src="img/pickup7.jpg" alt="">
+				</div>
+				<div>
+					<img src="img/pickup8.jpg" alt="">
+				</div>
+				<div>
+					<img src="img/pickup9.jpg" alt="">
+				</div>
+			</div>
+		</section>
 
-                    <br />
+		<!-- FEATURE -->
+		<section id="feature" class="feature">
+			<h2>FEATURE</h2>
+			<div class="feature-grid">
+				<div class="feature-item">
+					<img class="fadein" src="img/feature1.jpg" alt="">
+					<div class="feature-item-content">
+						<p class="feature-item-cat">category</p>
+						<p class="feature-item-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						<p class="feature-item-date">XXXX.XX.XX</p>
+					</div>
+				</div>
 
-                    <label>Mail:</label>
-                    <br />
-                    <input type="text">
+				<div class="feature-item">
+					<img class="fadein" src="img/feature2.jpg" alt="">
+					<div class="feature-item-content">
+						<p class="feature-item-cat">category</p>
+						<p class="feature-item-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						<p class="feature-item-date">XXXX.XX.XX</p>
+					</div>
+				</div>
 
-                    <br />
+				<div class="feature-item">
+					<img class="fadein" src="img/feature3.jpg" alt="">
+					<div class="feature-item-content">
+						<p class="feature-item-cat">category</p>
+						<p class="feature-item-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						<p class="feature-item-date">XXXX.XX.XX</p>
+					</div>
+				</div>
 
-                    <label>Message:</label>
-                    <br />
-                    <textarea></textarea>
-                </form>
+				<div class="feature-item">
+					<img class="fadein" src="img/feature4.jpg" alt="">
+					<div class="feature-item-content">
+						<p class="feature-item-cat">category</p>
+						<p class="feature-item-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						<p class="feature-item-date">XXXX.XX.XX</p>
+					</div>
+				</div>
 
-                <div class="footer-form-send">
-                    <p>SEND</p>
-                </div>
-            </div>
-        </div>
-        
-        <p>&copy; Sneakers</p>
-    </footer>
+				<div class="feature-item">
+					<img class="fadein" src="img/feature5.jpg" alt="">
+					<div class="feature-item-content">
+						<p class="feature-item-cat">category</p>
+						<p class="feature-item-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						<p class="feature-item-date">XXXX.XX.XX</p>
+					</div>
+				</div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+				<div class="feature-item">
+					<img class="fadein" src="img/feature6.jpg" alt="">
+					<div class="feature-item-content">
+						<p class="feature-item-cat">category</p>
+						<p class="feature-item-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						<p class="feature-item-date">XXXX.XX.XX</p>
+					</div>
+				</div>
 
-    <!-- slickの読み込み -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+				<div class="feature-item">
+					<img class="fadein" src="img/feature7.jpg" alt="">
+					<div class="feature-item-content">
+						<p class="feature-item-cat">category</p>
+						<p class="feature-item-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						<p class="feature-item-date">XXXX.XX.XX</p>
+					</div>
+				</div>
 
-    <script src="script.js"></script>
+				<div class="feature-item">
+					<img class="fadein" src="img/feature8.jpg" alt="">
+					<div class="feature-item-content">
+						<p class="feature-item-cat">category</p>
+						<p class="feature-item-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						<p class="feature-item-date">XXXX.XX.XX</p>
+					</div>
+				</div>
+
+				<div class="feature-item">
+					<img class="fadein" src="img/feature9.jpg" alt="">
+					<div class="feature-item-content">
+						<p class="feature-item-cat">category</p>
+						<p class="feature-item-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						<p class="feature-item-date">XXXX.XX.XX</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="backToTop-btn displayOn">
+			<a href="#">↑</a>
+		</div>
+	</main>
+
+	<footer id="contact">
+		<h2>CONTACT</h2>
+		<div class="footer-contents">
+			<div class="footer-contents-text">
+				<p>テキストテキストテキスト</p>
+				<p>
+					テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+					テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+					テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+				</p>
+				<p>
+					テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+					テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+					テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+				</p>
+			</div>
+			<div class="footer-contents-form">
+				<form>
+					<label>Name:</label>
+					<br />
+					<input type="text" class="textbox">
+
+					<br />
+
+					<label>Mail:</label>
+					<br />
+					<input type="text" class="textbox">
+
+					<br />
+
+					<label>Message:</label>
+					<br />
+					<textarea></textarea>
+				</form>
+
+				<div class="footer-form-send">
+						<p>SEND</p>
+				</div>
+			</div>
+		</div>
+		
+		<p class="copyright">&copy; Sneakers</p>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<!-- slickの読み込み -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+	<script src="script.js"></script>
 </body>
 </html>
