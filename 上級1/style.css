@@ -51,17 +51,22 @@ header {
   background-color: #121212;
   overflow-x: hidden;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: unset;
   transition: all 0.5s;
   z-index: 20;
   opacity: 0;
 }
 .header-navi a {
   color: white;
+  text-decoration: none;
+}
+.header-navi a:hover {
+  color: rgba(66, 224, 203, 0.89);
 }
 .header-navi ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 .header-navi ul.header-nav-menu {
   margin-bottom: 60px;
@@ -181,7 +186,7 @@ video:hover::-webkit-media-controls {
 .feature {
   max-width: 90%;
   padding: 50px 16px 50px 16px;
-  margin: -50px auto 10px auto;
+  margin: -50px auto 70px auto;
 }
 
 .fadein {
@@ -220,7 +225,7 @@ video:hover::-webkit-media-controls {
   text-align: right;
 }
 
-.backToTop-btn {
+.back-btn {
   width: 30px;
   height: 30px;
   background-color: black;
@@ -233,7 +238,7 @@ video:hover::-webkit-media-controls {
   justify-content: center;
   align-items: center;
 }
-.backToTop-btn a {
+.back-btn a {
   font-weight: bold;
   color: white;
   text-decoration: none;
@@ -241,14 +246,15 @@ video:hover::-webkit-media-controls {
 
 .displayOn {
   opacity: 0;
-  transform: translateY(20px);
   transition: all 1s;
+  z-index: 100;
 }
 
 footer {
   background-color: black;
   color: white;
-  padding: 10px 0 5px 0;
+  margin-top: -70px;
+  padding: 70px 0 5px 0;
 }
 footer h2 {
   color: white;
@@ -308,6 +314,18 @@ textarea {
 }
 
 @media screen and (max-width: 600px) {
+  .header-navi {
+    width: 100%;
+    height: 100%;
+  }
+  .header-navi ul.header-nav-menu {
+    margin-bottom: 20px;
+    width: 70%;
+  }
+  .header-navi ul.header-nav-menu li {
+    width: 100%;
+    padding: 10px 0;
+  }
   .feature {
     padding: 50px 0;
   }

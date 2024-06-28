@@ -24,10 +24,13 @@ document.addEventListener('DOMContentLoaded', function() {
   // ハンバーガーメニュー
   document.querySelector('.header-hamburger').addEventListener('click', function() {
     let header = document.getElementById('header-menu');
+    let back = document.getElementById('back')
     if (header.classList.contains('open')) {
       header.classList.remove('open');
+      back.classList.add('back-btn')
     } else {
       header.classList.add('open');
+      back.classList.remove('back-btn')
     }
   });
 
@@ -45,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // スムーススクロール
-  let scrollLinks = document.querySelectorAll('a[hred^="#"]');
+  let scrollLinks = document.querySelectorAll('a[href^="#"]');
   scrollLinks.forEach(function(scrollLink) {
     scrollLink.addEventListener('click', function(e) {
       e.preventDefault();
@@ -55,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // トップからジャンプ先要素までの距離
       let offsetTop = target.offsetTop;
 
-      scrollTo(document.documentElement, offsetTop, 600);
+      scrollTo(document.documentElement, offsetTop, 2000);
     });
   });
 
@@ -100,15 +103,19 @@ document.addEventListener('DOMContentLoaded', function() {
         e.style.transform = 'translateY(0)';
       }
     });
+  });
 
-    this.document.querySelector('.displayOn', function(e) {
+  window.addEventListener('scroll', function() {
+    this.document.querySelectorAll('.displayOn').forEach(function(e) {
       let scroll2 = window.scrollY;
       let target2 = e.offsetTop;
       let windowHeight2 = window.innerHeight;
-      if (scroll2 > target2 - windowHeight2 + 100) {
+      if (scroll2 > target2 - windowHeight2 + 500) {
         e.style.opacity = '1';
         e.style.transform = 'tanslateY(0)';
+      } else {
+        e.style.opacity = '0';
       }
-    })
+    });
   });
 });
