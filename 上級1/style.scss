@@ -211,7 +211,7 @@ video:hover::-webkit-media-controls {
 .feature-grid {
     display: grid;
     gap: 26px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
     & .feature-item {
         transition: all 0.3s ease;
