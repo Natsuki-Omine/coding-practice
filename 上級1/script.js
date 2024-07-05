@@ -11,7 +11,7 @@ $(function() {
       {
         breakpoint: 768,
         settings: {
-          with: '200px',
+          width: '200px',
           centerPadding: '50px',
           slidesToShow: 1
         }
@@ -97,8 +97,8 @@ document.addEventListener('DOMContentLoaded', function() {
       // 画面の高さ
       let windowHeight = window.innerHeight;
   
-      // fadeinクラス要素が画面下にきてから150px通過したタイミングで表示
-      if (scroll > target - windowHeight + 150) {
+      // fadeinクラス要素が画面下にきてから100px通過したタイミングで表示
+      if (scroll > target - windowHeight + 100) {
         e.style.opacity = '1';
         e.style.transform = 'translateY(0)';
       }
